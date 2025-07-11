@@ -59,3 +59,15 @@ async def validate_and_checkpoint_crossing(ggu, entity_id: str, clearance: str, 
         # Optionally: add notification or further security steps here
 
     return allowed
+
+#import main_gate_validation
+
+# Inside your gate crossing logic (async context):
+#allowed = await main_gate_validation.validate_and_checkpoint_crossing(ggu, user_id, user_clearance)
+#if allowed:
+    # Proceed with gate crossing
+    #pass
+#else:
+    # Deny access/quarantine logic already applied inside function
+    #pass
+
